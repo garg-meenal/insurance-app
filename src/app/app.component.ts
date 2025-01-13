@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LoginService } from './services/login.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,15 @@ import { Component } from '@angular/core';
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'insurance-app';
+  isUserLoggedIn = false;
+  
+  ngOnInit(): void {
+    const isLoggedIn = !!localStorage.getItem('user');
+    if (isLoggedIn) {
+      this.isUserLoggedIn = true;
+    }
+  }
+
 }

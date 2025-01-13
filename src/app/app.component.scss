@@ -1,0 +1,17 @@
+.page-heading{
+    display: flex;
+    justify-content: center;
+    background-color: lavender;
+    margin: 0;
+    padding: 10px;
+}
+.nav-bar{
+    background-color: lavenderblush;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    a{
+        padding: 0 40px 0 0;
+        text-decoration: none;
+    }
+}
