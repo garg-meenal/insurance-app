@@ -1,5 +1,5 @@
 <h1 class="page-heading">Insurance App</h1>
-<nav *ngIf="isUserLoggedIn" class="nav-bar">
+<nav *ngIf="isUserLoggedIn || isLoginSuccess" class="nav-bar">
   <a routerLink="/policy">Policy App</a>
   <a routerLink="/payment">Payment App</a>
 </nav>
