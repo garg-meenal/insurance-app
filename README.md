@@ -9,7 +9,7 @@ To start a local development server, run:
 ```bash
 ng serve
 ```
-
+App is using json server for user login, users.json file has the available user name and passwords.
 To start the json server, run:
 ```bash
 json-server --watch users.json
